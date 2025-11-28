@@ -812,4 +812,386 @@ body {
     background: var(--accent);
     color: #191A23;
 }
+/* -------------------------------------- */
+/* TESTIMONIAL SECTION */
+/* -------------------------------------- */
+
+.testimonial-section {
+    width: 100%;
+    margin-top: 60px;
+}
+
+.testimonial-heading h2 {
+    background: #B9FF66;
+    display: inline-block;
+    padding: 6px 20px;
+    font-size: 40px;
+    border-radius: 10px;
+    margin-left: 140px;
+}
+
+.testimonial-heading p {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #333;
+    margin-left: 450px;
+    align-content:center;
+}
+
+/* BLACK MAIN WRAPPER */
+.testimonial-wrapper {
+    width: 85%;
+    margin: 40px auto 0 auto;
+    background: #16181f;
+    border-radius: 40px;
+    padding: 60px 0 90px 0;
+    position: relative;
+    overflow: hidden;
+    height: 460px; /* fixes layout like screenshot */
+}
+
+/* SLIDER */
+.testimonial-slider {
+    display: flex;
+    gap: 80px;
+    padding: 0 200px; /* ensures left/right card half visible */
+    transition: 0.5s ease;
+}
+
+/* TESTIMONIAL CARD */
+.testimonial-card {
+    width: 520px;
+    padding: 35px 40px;
+    border: 2px solid #B9FF66;
+    border-radius: 30px;
+    position: relative;
+    background: transparent;
+    flex-shrink: 0;
+}
+
+.testimonial-card .text {
+    font-size: 16px;
+    color: #fff;
+    line-height: 1.6;
+}
+
+.testimonial-card .tail {
+    width: 30px;
+    height: 30px;
+    background: #B9FF66;
+    clip-path: polygon(0 0, 100% 0, 0 100%);
+    position: absolute;
+    bottom: -2px;
+    left: 40px;
+}
+
+.testimonial-card .name {
+    margin-top: 25px;
+    font-size: 18px;
+    color: #B9FF66;
+    font-weight: 600;
+}
+
+.testimonial-card .role {
+    font-size: 15px;
+    color: #fff;
+}
+
+/* CONTROLS */
+.testimonial-controls {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+/* ARROWS */
+.arrow {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.arrow:hover {
+    color: #B9FF66;
+}
+
+/* DOTS */
+.dots {
+    display: flex;
+    gap: 12px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    background: #fff;
+    opacity: 0.5;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.dot.active {
+    background: #B9FF66;
+    opacity: 1;
+}
+/* CONTACT SECTION */
+.contact-section {
+    padding: 80px 70px;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/* Header same as testimonials */
+.contact-header {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.contact-title {
+    background: #caff6a;
+    padding: 8px 22px;
+    border-radius: 8px;
+    font-size: 42px;
+    font-weight: 700;
+}
+
+.contact-desc {
+    max-width: 550px;
+    font-size: 17px;
+    color: #444;
+}
+
+/* MAIN BOX */
+.contact-box {
+    background: #f3f3f3;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    padding: 60px 70px;
+    gap: 40px;
+}
+
+/* LEFT FORM AREA — EXACT WIDTH OF ORIGINAL */
+.contact-form {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.contact-options {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.contact-options label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+/* INPUTS */
+.input-field {
+    width: 100%;
+    padding: 14px 18px;
+    border-radius: 10px;
+    border: 2px solid #c9c9c9;
+    font-size: 15px;
+    outline: none;
+}
+
+.textarea-field {
+    height: 120px;
+    resize: none;
+}
+
+/* RIGHT IMAGE AREA — EXACT POSITIVIUS SPACING */
+.contact-image {
+    width: 45%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.contact-image img {
+    width: 85%;
+    max-width: 420px;
+    height: auto;
+}
+
+/* SEND BUTTON */
+.cta-button {
+    padding: 16px 40px;
+    background: #191a23;
+    border: none;
+    border-radius: 10px;
+    color: #000;
+    font-size: 17px;
+    cursor: pointer;
+    transition: 0.25s ease;
+    margin-top: 10px;
+}
+
+.cta-button:hover {
+    background: #b9ff66;
+    color: black;
+    transition: ease-in-out 0.5s;
+    transform: scale(1.05);
+}
+/* FOOTER SECTION */
+.footer-section {
+    background: #191a23;
+    padding: 80px 70px;
+    border-radius: 40px 40px 0 0;
+    max-width: 1280px;
+    margin: 0 auto;
+    color: #fff;
+}
+
+/* Wrapper */
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+/* TOP ROW */
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo */
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-logo img {
+    width: 200px;
+}
+
+.footer-logo h2 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+/* Nav Links */
+.footer-nav {
+    display: flex;
+    gap: 30px;
+}
+
+.footer-nav li {
+    list-style: none;
+}
+
+.footer-nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.footer-nav a:hover {
+    text-decoration: underline;
+}
+
+/* Social icons */
+.footer-social {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-social img {
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+}
+
+/* MIDDLE ROW */
+.footer-middle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #25262C;
+    padding: 40px;
+    border-radius: 20px;
+    gap: 40px;
+}
+
+/* Contact info */
+.footer-contact h3 {
+    color: #b9ff66;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.footer-contact p {
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+/* Subscribe box */
+.footer-subscribe {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.footer-subscribe input {
+    padding: 14px 20px;
+    width: 280px;
+    border-radius: 8px;
+    border: 2px solid #c9c9c9;
+    background: transparent;
+    color: white;
+    font-size: 15px;
+}
+
+.footer-subscribe input::placeholder {
+    color: #dcdcdc;
+}
+
+/* BUTTON (same as SEND button) */
+.cta-button {
+    padding: 16px 40px;
+    border: none;
+    border-radius: 10px;
+    font-size: 17px;
+    cursor: pointer;
+    background: #b9ff66;
+}
+
+.cta-button:hover {
+    background: #191a23;
+    color: #f2f2f2;
+    transition: ease-in-out 0.5s;
+    transform: scale(1.05);
+}
+
+/* BOTTOM ROW */
+.footer-bottom {
+    border-top: 1px solid #444;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #dcdcdc;
+}
 
